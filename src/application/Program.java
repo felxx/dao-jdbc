@@ -66,6 +66,22 @@ public class Program {
 		System.out.println();
 		System.out.println(newDepartment.getId());
 		System.out.println();
+		
+		System.out.println("===== TEST 8: SELLER UPDATE =====");
+		System.out.println();
+		seller = sellerDao.findById(1);
+		seller.setName("Martha");
+		sellerDao.update(seller);
+		System.out.println("Seller update completed");
+		System.out.println();
+
+		System.out.println("===== TEST 7: DEPARTMENT UPDATE =====");
+		System.out.println();
+		department = departmentDao.findById(1);
+		department.setName("Mobílias");
+		departmentDao.update(department);
+		System.out.println("Department update completed");
+		System.out.println();
 	}
 
 }
